@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quanto falta? Contagem regressiva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto falta?</h1>
+  <p class="sub">Escolha uma data e veja quantos dias, horas e minutos faltam. Depois é só copiar e mandar para alguém.</p>
+
+  <div class="form">
+    <div class="field full"><label for="nome">Nome do evento (opcional)</label><input id="nome" type="text" maxlength="60" placeholder="Ex.: Viagem para a praia"></div>
+    <div class="field"><label for="data">Data</label><input id="data" type="date"></div>
+    <div class="field"><label for="hora">Hora</label><input id="hora" type="time" value="00:00"></div>
+  </div>
+  <div class="chips" id="chips"></div>
+
+  <section class="result" aria-live="polite">
+    <p class="empty" id="empty">Escolha uma data acima para começar a contagem.</p>
+    <div id="out" hidden>
+      <p class="event" id="ev"></p>
+      <div id="count">
+        <div class="big">
+          <div><b id="d">0</b><span id="dl">dias</span></div>
+          <div><b id="h">0</b><span id="hl">horas</span></div>
+          <div><b id="m">0</b><span id="ml">minutos</span></div>
+        </div>
+        <p class="secs" id="s"></p>
+      </div>
+      <p class="msg" id="past" hidden></p>
+      <button class="copy" id="copy" type="button" style="margin-top:20px"><span id="copyTxt">Copiar resultado</span></button>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
