@@ -1,8 +1,0 @@
-Ideias para a próxima versão:
-
-Link compartilhável, para quem receber já abrir a contagem pronta.
-Lista de vários eventos ao mesmo tempo (aniversário, viagem, prova).
-Contar só dias úteis, útil para prazos de trabalho.
-Mais formatos de cópia: curto ("faltam 32 dias"), com emojis ou sem.
-Botão para trocar entre tema claro e escuro.
-Mais atalhos, como feriados nacionais e seu aniversário.
